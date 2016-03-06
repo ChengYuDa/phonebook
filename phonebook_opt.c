@@ -3,12 +3,11 @@
 #include <stdio.h>
 #include "phonebook_opt.h"
 
-/* FILL YOUR OWN IMPLEMENTATION HERE! */
+/* Sequential Search*/
 entry *findName(char lastName[], entry *pHead)
 {
     while (pHead != NULL ){
 		if (strcasecmp(lastName, pHead->lastName) == 0){
-			printf(" %12s  is found!\n", lastName);
 			return pHead ;
 		}
 		pHead = pHead -> pNext ;
